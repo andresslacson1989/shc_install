@@ -1,0 +1,12 @@
+#!/bin/bash
+
+apt update -y
+apt install gcc build-essential unzip -y
+wget https://codeload.github.com/neurobin/shc/zip/refs/heads/master
+unzip master
+cd shc-master
+./configure
+make
+make install
+cd 
+rm /root/master
